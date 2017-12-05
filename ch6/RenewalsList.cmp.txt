@@ -1,0 +1,15 @@
+<aura:component controller="edfreitas.RenewalsController">
+    <aura:attribute name="renewals" type="Renewal__c[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="edfreitas:KeyChange" action="{!c.KeyChange}"/>
+
+    <ul class="list-group">
+        <aura:iteration items="{!v.renewals}" var="renewal">
+            <li class="list-group-item">
+                <a href="{! '#renewal/' + renewal.Name }">
+                    <p>{!renewal.Name }</p>
+                </a>
+            </li>
+        </aura:iteration>
+    </ul>
+</aura:component>

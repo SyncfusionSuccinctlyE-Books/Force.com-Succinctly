@@ -1,0 +1,20 @@
+<aura:application >
+    <link href='/resource/Bootstrap/' rel="stylesheet"/>
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Quick Renewals</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+            <edfreitas:Search/>
+            <edfreitas:RenewalsList />
+        </div>
+      </div>
+    </div>
+</aura:application>

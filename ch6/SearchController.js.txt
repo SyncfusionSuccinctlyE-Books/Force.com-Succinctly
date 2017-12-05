@@ -1,0 +1,7 @@
+({
+    KeyChange: function(component, event, helper) {
+        var evt = $A.get("e.edfreitas:KeyChange");
+        evt.setParams({"sKey": event.target.value});
+        evt.fire();
+    }
+})

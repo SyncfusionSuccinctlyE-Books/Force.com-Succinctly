@@ -1,0 +1,23 @@
+({
+    doInit : function(component, event) {
+        var action = component.get("c.FindAll");
+        
+        action.setCallback(this, function(a) {
+            component.set("v.renewals", a.getReturnValue());
+        });
+
+        $A.enqueueAction(action);
+    },
+    
+    KeyChange : function(component, event) {
+        var sKey = event.getParam("sKey");
+        var action = component.get("c.FindByName");
+        
+        action.setParams({ "sKey": sKey });
+        action.setCallback(this, function(a) {
+            component.set("v.renewals", a.getReturnValue());
+        });
+        
+        $A.enqueueAction(action);
+    }
+})

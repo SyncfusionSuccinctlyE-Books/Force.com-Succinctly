@@ -1,0 +1,14 @@
+public with sharing class RenewalsController {
+    @AuraEnabled
+    public static List<Renewal__c> FindAll() {
+        return [SELECT Name, Client__c, Amount__c, Currency__c, 
+                Expired__c, LastModifiedById from Renewal__c LIMIT 50];
+    }
+    
+    @AuraEnabled
+    public static List<Renewal__c> FindByName(String sKey) {
+        String n = '%' + sKey + '%';
+        return [SELECT Name, Client__c, Amount__c, Currency__c, 
+                Expired__c, LastModifiedById FROM Renewal__c WHERE Name LIKE :n LIMIT 50];
+    }
+}
