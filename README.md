@@ -1,7 +1,7 @@
 # Force.com Succinctly
-This is the companion repo for [*Force.com Succinctly*](https://www.syncfusion.com/resources/techportal/ebooks) by Ed Freitas. Published by Syncfusion.
+This is the companion repo for [*Force.com Succinctly*](https://www.syncfusion.com/resources/techportal/details/ebooks/forcedotcomsuccinctly) by Ed Freitas. Published by Syncfusion.
 
-[![cover](https://github.com/SyncfusionSuccinctlyE-Books/Force.com-Succinctly/blob/master/cover.png)](https://www.syncfusion.com/resources/techportal/ebooks)
+[![cover](https://github.com/SyncfusionSuccinctlyE-Books/Force.com-Succinctly/blob/master/cover.png)](https://www.syncfusion.com/resources/techportal/details/ebooks/forcedotcomsuccinctly)
 
 ## Looking for more _Succinctly_ titles?
 
